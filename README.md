@@ -19,9 +19,9 @@
 
  Conclusion
 -----------
-- -pencore 中文网 https://oc.skk.moe/kextlist.html kext 兼容性检查
+- pencore 中文网 https://oc.skk.moe/kextlist.html kext 兼容性检查
 - https://dortania.github.io/OpenCore-Install-Guide/ 官方网站，按着步骤做就行
-- -ttps://mirrors.dtops.cc/iso/MacOS/daliansky_macos/  下载链接 
+- ttps://mirrors.dtops.cc/iso/MacOS/daliansky_macos/  下载链接 
 - https://www.cnblogs.com/yucloud/p/opencore.html 安装教程
 - 从 https://opencore.slowgeek.com/ 校验自己设置的配置文件是否包含基本错误
 <br>
