@@ -2,9 +2,7 @@
 
 ## Hackintosh-AMD-Catalina10.15.7
 ### ASUS-TUF-B450M-PLUS-GAMING
-<br>
-
-- Macos: 10.15.7 (19H15)
+- Macos: 10.15.7 (19H15)/11.2
 - OC: 0.6.7 (shown from Hackintool)
 - CPU: AMD Ryzen 7 3700X 8-Core 八核
 - MotherBoard: ASUS-TUF-B450M-PLUS-GAMING
@@ -65,11 +63,21 @@ Command
 Operation
 ---------
 - shift + alt + k 输入 
+- command + shift + 3 截图
+- command + shift + 4 区域截图
+- command + shift + 4 + space 窗口截图
 
 <br>
 
 
 # 当前开启了debug 模式，删除-v即可关闭
-# 不要使用这个配置升级big sur，会在  自动重启
+~~# 不要使用这个配置升级big sur，会在  自动重启~~
 # 我只是把我这几天用到的工具、网址、问题 总结了一下，有几个drive可以删除但是并没有这么做，先放着了，这个配置也可能不通用，酌情参考。
+# 所有的kext 和驱动 应该都是当前最新的release 版本，毕竟是通过ocbuilder 自动编译的最新代码
+# 目前已升级到 Big Sur 11.2
+    > 注意
+    > 1. 第一次重启会卡在进度条很久，但是进度还是在走的，之后就没有install 选项了，会直接进入系统
+    > 2. 如果之前更新过11.2版本，但是失败了，请再重新安装一次更新，否则会失败，亲身经历，重新安装一次更新就好了
 
+![photo](https://github.com/SandiTT/Hackintosh-3700X-5700-B450M-Catalina-10.15.7/raw/0.6.7/photo/catalina.png)
+![photo](https://github.com/SandiTT/Hackintosh-3700X-5700-B450M-Catalina-10.15.7/raw/0.6.7/photo/big sur.png)
