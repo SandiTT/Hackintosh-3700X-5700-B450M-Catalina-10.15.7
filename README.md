@@ -1,4 +1,4 @@
-# 从 https://github.com/jinhaozcp/Hackintosh-Ryzen-MSI-B450-Gaming-Pro-carbon-ac 修改而来
+# 从[原网址](https://github.com/jinhaozcp/Hackintosh-Ryzen-MSI-B450-Gaming-Pro-carbon-ac) 修改而来
 
 ## Hackintosh-AMD-Catalina10.15.7
 ### ASUS-TUF-B450M-PLUS-GAMING
