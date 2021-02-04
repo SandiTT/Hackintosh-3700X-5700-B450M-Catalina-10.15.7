@@ -81,4 +81,4 @@ Operation
 
 ![photo](https://github.com/SandiTT/Hackintosh-3700X-5700-B450M-Catalina-10.15.7/raw/0.6.7/photo/catalina.png)
 
-![photo](https://github.com/SandiTT/Hackintosh-3700X-5700-B450M-Catalina-10.15.7/raw/0.6.7/photo/photo/big%20sur.png)
+![photo](https://github.com/SandiTT/Hackintosh-3700X-5700-B450M-Catalina-10.15.7/blob/0.6.7/photo/big%20sur.png)
