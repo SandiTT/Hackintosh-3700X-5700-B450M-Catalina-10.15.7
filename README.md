@@ -80,4 +80,5 @@ Operation
     > 2. 如果之前更新过11.2版本，但是失败了，请再重新安装一次更新，否则会失败，亲身经历，重新安装一次更新就好了
 
 ![photo](https://github.com/SandiTT/Hackintosh-3700X-5700-B450M-Catalina-10.15.7/raw/0.6.7/photo/catalina.png)
-![photo](https://github.com/SandiTT/Hackintosh-3700X-5700-B450M-Catalina-10.15.7/raw/0.6.7/photo/big sur.png)
+
+![photo](https://github.com/SandiTT/Hackintosh-3700X-5700-B450M-Catalina-10.15.7/raw/0.6.7/photo/photo/big%20sur.png)
