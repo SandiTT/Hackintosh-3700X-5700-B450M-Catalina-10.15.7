@@ -59,7 +59,7 @@ Command
 > og show --predicate 'process == "kernel"' --debug --last 10m > ~/Desktop/kernel.log  
 
 > 挂载EFI分区 <br>
-> diskutil list 
+> diskutil list <br>
 > sudo diskutil mount disk3s1
 
 Operation
