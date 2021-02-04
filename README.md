@@ -33,6 +33,7 @@ Software
 - lghub 罗技鼠标驱动
 - kext updater（https://bitbucket.org/profdrluigi/kextupdater/downloads/） 主要用来检测config 是否报错，不知道这个软件的更新按钮在哪 
 - qt opencore (https://github.com/ic005k/QtOpenCoreConfig/releases )  0.6.5 用来更新 kext 、 acpi 、 drivers 、tools
+- https://mackie100projects.altervista.org/ opencore configurator
 <br>
 
 Issues
