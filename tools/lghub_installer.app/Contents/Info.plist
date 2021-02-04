@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE
+    plist
+    PUBLIC
+    "-//Apple//DTD PLIST 1.0//EN"
+    "http://www.apple.com/DTDs/PropertyList-1.0.dtd"
+>
+<plist version="1.0">
+<dict>
+  <key>LSHasLocalizedDisplayName</key>
+  <true/>
+  <key>CFBundleExecutable</key>
+  <string>lghub_installer</string>
+  <key>CFBundleGetInfoString</key>
+  <string>lghub_installer</string>
+  <key>CFBundleIconFile</key>
+  <string>/Users/builder/builds/0248bd3c/0/kragle/lego/icon.icns</string>
+  <key>CFBundleIdentifier</key>
+  <string>com.logi.ghub.installer</string>
+  <key>CFBundleInfoDictionaryVersion</key>
+  <string>6.0</string>
+  <key>CFBundleName</key>
+  <string>lghub_installer</string>
+  <key>CFBundleDisplayName</key>
+  <string>lghub_installer</string>
+  <key>CFBundlePackageType</key>
+  <string>APPL</string>
+  <key>CFBundleVersion</key>
+  <string>2020.12.0.3534</string>
+  <key>CSResourcesFileMapped</key>
+  <true/>
+  <key>NSHumanReadableCopyright</key>
+  <string>Copyright © 2020 Logitech Inc.</string>
+  <key>LSMinimumSystemVersion</key>
+  <string>10.11</string>
+  <key>NSPrincipalClass</key>
+  <string>NSApplication</string>
+  <key>NSMainNibFile</key><string>MainMenu</string>
+  <key>ATSApplicationFontsPath</key><string>Fonts/</string>
+  <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSExceptionDomains</key>
+        <dict>
+        <key>logitech.io</key>
+        <dict>
+          <key>NSIncludesSubdomains</key>
+          <true/>
+          <key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+          <true/>
+        </dict>
+      </dict>
+    </dict>
+</dict>
+</plist>
