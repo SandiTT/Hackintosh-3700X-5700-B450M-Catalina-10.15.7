@@ -9,14 +9,15 @@
 - Memory: 8GB*2 (TEAMGROUP-UD4-3200)
 - SSD: PLEXTOR PX-128M6S 128G
 - GPU: Radeon RX 5700 白金 蓝宝石
-- AUDIO CHIPSET: IDK
+- AUDIO CHIPSET: Default
 - LAN CHIPSET: Realtek 8111H
 - WIFI: [AX210](https://ark.intel.com/content/www/cn/zh/ark/products/204836/intel-wi-fi-6e-ax210-gig.html?wapkw=ax210) 没有对应的驱动
 - Bluetooth: [AX210](https://ark.intel.com/content/www/cn/zh/ark/products/204836/intel-wi-fi-6e-ax210-gig.html?wapkw=ax210) 使用了通用驱动
+
 <br>
 
 Tutorial
------------
+---
 - [pencore 中文网](https://oc.skk.moe/kextlist.html) kext 兼容性检查
 - [opencore offical guide line](https://dortania.github.io/OpenCore-Install-Guide/) 官方网站，按着步骤做就行
 - [mirrors](https://mirrors.dtops.cc/iso/MacOS/daliansky_macos/)  下载链接 
@@ -25,8 +26,8 @@ Tutorial
 
 <br>
 
-Tools
----------
+Setup Toolkit
+---
 - <u>***https://opencore.slowgeek.com/ 一定要使用这个网站来校验config文件***</u>
 - [ocbuilder](https://github.com/Pavo-IM/ocbuilder/) ocbuilder 安装包，用于升级oc 版本，需要预先安装xcode才能使用
 - [kext update ](https://bitbucket.org/profdrluigi/kextupdater/downloads/) 主要用来检测config 是否报错，貌似不能自动安装更新，只能帮你下载。自带的修复睡眠功能感觉没效果
@@ -34,19 +35,28 @@ Tools
 - [opencore configurator](https://mackie100projects.altervista.org/)  opencore configurator 安装包，用于配置config.list 文件，我觉得不好用
 
 - [ProperTree](https://github.com/corpnewt/ProperTree)  用于编辑.plist   文件，mac和win 都可以使用，我觉得不好用
+- [IORegistryExplorer.app](https://github.com/khronokernel/IORegistryClone/blob/master/ioreg-210.zip) [轻松查看macOS的内部运行情况](https://dortania.github.io/OpenCore-Post-Install/usb/manual/manual.html#usb-mapping-the-manual-way)
 
 实用工具
-------
+---
 - [SteelSeries ExactMouse Tool ](https://downloads.steelseriescdn.com/drivers/tools/steelseries-exactmouse-tool.dmg) 去除鼠标加速度
 - [lghub ](https://download01.logi.com/web/ftp/pub/techsupport/gaming/lghub_installer.zip)鼠标驱动
 - [Hackintool](https://github.com/headkaze/Hackintool/releases) 工具，检测设备的各项数据
 - [katsurashareware](https://www.katsurashareware.com/amorphousdiskmark/) 磁盘测速软件
 - [Homebrew](https://brew.sh/index_zh-cn) macOS（或 Linux）缺失的软件包的管理器，[安装卸载教程](https://github.com/Homebrew/install),遇到报错就重新卸载重装
 - [MonitorControl](https://github.com/MonitorControl/MonitorControl) 外置显示器 亮度、音量等管理(基于[Homebrew](https://brew.sh/index_zh-cn) 安装) 太强了
+- [ShiftIt](https://github.com/fikovnik/ShiftIt) 分屏软件
+- [istatmenus](https://bjango.com/mac/istatmenus/) An advanced Mac System monitor for your menubar
+- [paste](https://medium.com/pasteapp) 拷贝的历史记录，比windows 的功能全面
+- The Unarchive 解压缩工具
+- Alfred 搜索 
+- iRightMouse 超级右键
+- Rectangle 分屏软件
+
 <br>
 
 Issues
--------
+---
 |  问题   | 解决方法  | 来源
 |  ----  | ----  | --- |
 | can't No schema for BlacklistAppleupdate at 3 Index  | \<key>BlacklistAppleUpdate</key>\<true/> (也可能是\<false/>) | http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1861748
@@ -54,26 +64,36 @@ Issues
 | macos去除鼠标加速度 | https://downloads.steelseriescdn.com/drivers/tools/steelseries-exactmouse-tool.dmg | https://www.v2ex.com/t/389853
 | stuck on 'usr\\standalone\\OS.dmg.root_hash'| 使用 [上面的校验网站](https://opencore.slowgeek.com/) 查找是否存在错误信息| https://www.tonymacx86.com/threads/big-sur-installer-error-in-opening-usr-standalone-os-dmg-root_hash.306845/
 | 无法调整显示器的输出声音 | [MonitorControl](https://github.com/MonitorControl/MonitorControl) | https://www.v2ex.com/t/671686
+| brew 安装报错 No available formula with the name  | 1. rm -rf /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core <br> 2.brew update| online 
+| 没有权限打开应用 | --- | ---
 | --- | --- | ---
 
 <br>
 
 Command
-----------
-> 输出日志文件到桌面 <br>
-> og show --predicate 'process == "kernel"' --debug --last 10m > ~/Desktop/kernel.log  
+---
+>允许安装任意来源
 
-> 挂载EFI分区 <br>
-> diskutil list <br>
-> sudo diskutil mount disk3s1
+    sudo spctl --master-disable
 
-> [显示器音量控制 homebrew](https://github.com/Homebrew/homebrew-cask) <br>
-> /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+> 输出日志文件到桌面 
 
+    log show --predicate 'process == "kernel"' --debug --last 10m > ~/Desktop/kernel.log  
 
+> 挂载EFI分区 
+
+    diskutil list 
+    sudo diskutil mount disk3s1
+
+> [显示器音量控制 homebrew](https://github.com/Homebrew/homebrew-cask)
+    
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    brew install --cask monitorcontrol
+
+<br>
 
 Operation
----------
+---
 - shift + alt + k 输入 
 - command + shift + 3 截图
 - command + shift + 4 区域截图
@@ -83,11 +103,10 @@ Operation
 <br>
 
 Issues
---------
+---
 1. **节能不能设置睡眠时间**
-2. **手动睡眠会在设备刚刚关闭的情况下立即启动，触动鼠标还是会亮屏**
-3. 蓝牙时不时会down掉，无法切换，等待大佬后续的更新
-4. 等待 ax210 驱动的支持 [itlwm](http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1848662)
+2. **睡眠后会立即启动，唤醒后蓝牙无法使用，应该是USB 映射的问题**
+3. 等待 ax210 驱动的支持 [itlwm](http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1848662)
 
 <br>
 
