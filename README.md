@@ -23,6 +23,9 @@ Tutorial
 - [mirrors](https://mirrors.dtops.cc/iso/MacOS/daliansky_macos/)  下载链接 
 - [安装教程](https://www.cnblogs.com/yucloud/p/opencore.html)
 - [升级opencore 教程 大头蔡Cass](https://www.bilibili.com/video/BV11i4y1L7Mn?t=101)
+- [官方修复睡眠问题](https://dortania.github.io/OpenCore-Post-Install/universal/sleep.html)
+- [官方制作USBMap](https://dortania.github.io/OpenCore-Post-Install/usb/#macos-and-the-15-port-limit)
+- [民间大佬制作USBMap，来自tonymacx86](https://www.tonymacx86.com/threads/the-new-beginners-guide-to-usb-port-configuration.286553/)
 
 <br>
 
@@ -57,7 +60,7 @@ Setup Toolkit
 
 Issues
 ---
-|  问题   | 解决方法  | 来源
+|  Problems/问题   | Solution/解决方法  | According to/来源
 |  ----  | ----  | --- |
 | can't No schema for BlacklistAppleupdate at 3 Index  | \<key>BlacklistAppleUpdate</key>\<true/> (也可能是\<false/>) | http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1861748
 | Load image failed – Security | Misc-Security-securebootmodel - disabled | https://macx.top/15131.html 
@@ -66,7 +69,8 @@ Issues
 | 无法调整显示器的输出声音 | [MonitorControl](https://github.com/MonitorControl/MonitorControl) | https://www.v2ex.com/t/671686
 | brew 安装报错 No available formula with the name  | 1. rm -rf /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core <br> 2.brew update| online 
 | 没有权限打开应用 | --- | ---
-| kernel: (AppleACPIPlatform) AppleACPIPlatformPower Wake reason: GPP1 GPP3 GPP4 GPP5 GPP6 GPP7 GPP9 X162 GPPA GPPB GPPC GPPD GPPE GPPF GP10 GP11 PX11 | 因为没有在网上找到任何关于这个的答案，并且尝试过了USBMap，也没有任何效果，在我看来，这并不是USB导致的唤醒，相反这些设备我都无法在ioRegistoryExplorer 找到.<br>尝试通过maciAsl.app - file - open - DSDT，打开后搜索相应的设备(eg:GPP1),将这些设备引用的地方都删除，重新编译成.aml文件并将其倒入到OC的ACPI文件夹中，并在config.plist中添加相应参数。<br>当我第一次删除并重启后，发现还是秒醒，查看日志Wake reason: GPP0 GPP8 X161 GPP2 X4_0 PTXH (Network)，再通过 ioRegistoryExplorer 查找，发现PTXH这个设备编号下有很多设备，都被标记为红色字体，于是我再次从DSDT中删除该设备的所有参数，重启后一切都正常了。<br>睡眠后，鼠标可以点亮但是无法唤醒，应该是因为我删除了这些设备的原因，但是还是可以通过电源键唤醒的，做到这一步也很难了，不想再折腾了，能正常睡眠就行了。 | 原创
+| kernel: (AppleACPIPlatform) AppleACPIPlatformPower Wake reason: GPP1 GPP3 GPP4 GPP5 GPP6 GPP7 GPP9 X162 GPPA GPPB GPPC GPPD GPPE GPPF GP10 GP11 PX11 | 因为没有在网上找到任何关于这个的答案，并且尝试过了USBMap，也没有任何效果，在我看来，这并不是USB导致的唤醒，相反这些设备我都无法在ioRegistoryExplorer 找到.<br>尝试通过maciAsl.app - file - open - DSDT，打开后搜索相应的设备(eg:GPP1),将这些设备引用的地方都删除，重新编译成.aml文件并将其倒入到OC的ACPI文件夹中，并在config.plist中添加相应参数,注意即使是注释代码，生成的dsdt就看不到这些代码了。<br>当我第一次删除并重启后，发现还是秒醒，查看日志Wake reason: GPP0 GPP8 X161 GPP2 X4_0 PTXH (Network)，再通过 ioRegistoryExplorer 查找，发现PTXH这个设备编号下有很多设备，都被标记为红色字体，于是我再次从DSDT中删除该设备的所有参数，重启后一切都正常了。<br>睡眠后，鼠标可以点亮但是无法唤醒，应该是因为我删除了这些设备的原因，但是还是可以通过电源键唤醒的，做到这一步也很难了，不想再折腾了，能正常睡眠就行了。 | 原创
+| oc引导选择macos为默认系统 | 进入macos系统从磁盘启动macos即可 | --- 
 | --- | --- | ---
 
 <br>
@@ -108,6 +112,7 @@ Issues
 1. **节能不能设置睡眠时间**
 1. ~~**睡眠后会立即启动，唤醒后蓝牙无法使用，应该是USB 映射的问题**~~
 1. 由于通过修改DSDT 来修复睡眠秒醒的问题，请勿使用System-DSDT.aml,后续可能会产生很多其他的问题，毕竟删除了很多没用到的设备
+1. 蓝牙已经无法使用了，应该是后面删了很多kext，导致一开始能用的蓝牙不支持了，不过不在乎了
 1. 等待 ax210 驱动的支持 [itlwm](http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1848662)
 
 <br>
@@ -125,3 +130,5 @@ Issues
 ![photo](https://github.com/SandiTT/Hackintosh-3700X-5700-B450M-Catalina-10.15.7/blob/OC-0.6.7/photo/catalina.png)
 
 ![photo](https://github.com/SandiTT/Hackintosh-3700X-5700-B450M-Catalina-10.15.7/blob/OC-0.6.7/photo/big%20sur.png)
+
++ + + + 
