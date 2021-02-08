@@ -24,7 +24,7 @@ Tutorial
 - [安装教程](https://www.cnblogs.com/yucloud/p/opencore.html)
 - [升级opencore 教程 大头蔡Cass](https://www.bilibili.com/video/BV11i4y1L7Mn?t=101)
 - [官方修复睡眠问题](https://dortania.github.io/OpenCore-Post-Install/universal/sleep.html)
-- [官方制作USBMap](https://dortania.github.io/OpenCore-Post-Install/usb/#macos-and-the-15-port-limit)
+- [官方制作USBMap](https://dortania.github.io/OpenCore-Post-Install/usb/#macos-and-the-15-port-limit)，建议使用USBMap，本地有备份方便
 - [民间大佬制作USBMap，来自tonymacx86](https://www.tonymacx86.com/threads/the-new-beginners-guide-to-usb-port-configuration.286553/)
 
 <br>
@@ -104,6 +104,7 @@ Operation
 - command + shift + 4 区域截图
 - command + shift + 4 + space 窗口截图
 - command + t 在文件夹中打开新的标签页,比windows的好看
+- command + alt + esc 强制结束
 
 <br>
 
@@ -131,4 +132,6 @@ Issues
 
 ![photo](https://github.com/SandiTT/Hackintosh-3700X-5700-B450M-Catalina-10.15.7/blob/OC-0.6.7/photo/big%20sur.png)
 
++ 官方的教程也并不是通用的，就比如dgpu，生成的aml 无法导入，报错tx_flush:1074，或者说我能搜到的禁用pm981a固态、sata硬盘我都无法使用，都会报这个错，而且睡眠问题都不是这些设备导致的
++ 国内外的能参考的文章都很少，而且都是几年前的，很多明显报错无从找起，安装过程中起码打开过300个左右的网站，真的很麻烦
 + + + + 
