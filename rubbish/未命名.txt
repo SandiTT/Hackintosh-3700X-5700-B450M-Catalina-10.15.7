@@ -1,0 +1,62 @@
+2021-02-04 10:59:28 +0800 Sleep               	Entering Sleep state due to 'Software Sleep pid=125': Using AC (Charge:0%) 18 secs   
+2021-02-04 10:59:46 +0800 DarkWake            	DarkWake from Normal Sleep [CDN] : due to GPP1 GPP3 GPP4 GPP5 GPP6 GPP7 GPP9 X162 GPPA GPPB GPPC GPPD GPPE GPPF GP10 GP11 PX11/ Using AC (Charge:0%) 18 secs   
+2021-02-04 11:00:04 +0800 Wake                	DarkWake to FullWake from Normal Sleep [CDNVA] : due to HID Activity Using AC (Charge:0%)           
+2021-02-05 13:50:28 +0800 Sleep               	Entering Sleep state due to 'Idle Sleep': Using AC (Charge:0%) 18 secs   
+2021-02-05 13:50:46 +0800 DarkWake            	DarkWake from Normal Sleep [CDN] : due to GPP1 GPP3 GPP4 GPP5 GPP6 GPP7 GPP9 X162 GPPA GPPB GPPC GPPD GPPE GPPF GP10 GP11 PX11/ Using AC (Charge:0%) 15 secs   
+2021-02-05 13:51:01 +0800 Wake                	DarkWake to FullWake from Normal Sleep [CDNVA] : due to HID Activity Using AC (Charge:0%)           
+2021-02-05 15:11:21 +0800 Sleep               	Entering Sleep state due to 'Software Sleep pid=1685': Using AC (Charge:0%) 18 secs   
+2021-02-05 15:11:39 +0800 DarkWake            	DarkWake from Normal Sleep [CDN] : due to GPP1 GPP3 GPP4 GPP5 GPP6 GPP7 GPP9 X162 GPPA GPPB GPPC GPPD GPPE GPPF GP10 GP11 PX11/ Using AC (Charge:0%) 46 secs   
+2021-02-05 15:12:25 +0800 Sleep               	Entering Sleep state due to 'Maintenance Sleep': Using AC (Charge:0%) 1 secs    
+2021-02-05 15:12:26 +0800 DarkWake            	DarkWake from Normal Sleep [CDN] : due to GPP1 GPP3 GPP4 GPP5 GPP6 GPP7 GPP9 X162 GPPA GPPB GPPC GPPD GPPE GPPF GP10 GP11 PX11/HID Activity Using AC (Charge:0%) 0 secs    
+2021-02-05 15:12:26 +0800 Wake                	DarkWake to FullWake from Normal Sleep [CDNVA] : due to HID Activity Using AC (Charge:0%) 2081 secs 
+2021-02-05 15:47:07 +0800 Sleep               	Entering Sleep state due to 'Idle Sleep': Using AC (Charge:0%) 18 secs   
+2021-02-05 15:47:25 +0800 DarkWake            	DarkWake from Normal Sleep [CDN] : due to GPP1 GPP3 GPP4 GPP5 GPP6 GPP7 GPP9 X162 GPPA GPPB GPPC GPPD GPPE GPPF GP10 GP11 PX11/ Using AC (Charge:0%) 44 secs   
+2021-02-05 15:48:09 +0800 Sleep               	Entering Sleep state due to 'Maintenance Sleep': Using AC (Charge:0%) 17 secs   
+2021-02-05 15:48:26 +0800 DarkWake            	DarkWake from Normal Sleep [CDN] : due to GPP1 GPP3 GPP4 GPP5 GPP6 GPP7 GPP9 X162 GPPA GPPB GPPC GPPD GPPE GPPF GP10 GP11 PX11/ Using AC (Charge:0%) 49 secs   
+2021-02-05 15:49:15 +0800 Sleep               	Entering Sleep state due to 'Maintenance Sleep': Using AC (Charge:0%) 17 secs   
+2021-02-05 15:49:32 +0800 DarkWake            	DarkWake from Normal Sleep [CDN] : due to GPP1 GPP3 GPP4 GPP5 GPP6 GPP7 GPP9 X162 GPPA GPPB GPPC GPPD GPPE GPPF GP10 GP11 PX11/ Using AC (Charge:0%) 45 secs   
+2021-02-05 15:50:17 +0800 Sleep               	Entering Sleep state due to 'Maintenance Sleep': Using AC (Charge:0%) 17 secs   
+2021-02-05 15:50:34 +0800 DarkWake            	DarkWake from Normal Sleep [CDN] : due to GPP1 GPP3 GPP4 GPP5 GPP6 GPP7 GPP9 X162 GPPA GPPB GPPC GPPD GPPE GPPF GP10 GP11 PX11/ Using AC (Charge:0%) 41 secs   
+2021-02-05 15:51:15 +0800 Sleep               	Entering Sleep state due to 'Maintenance Sleep': Using AC (Charge:0%) 16 secs   
+2021-02-05 15:51:31 +0800 DarkWake            	DarkWake from Normal Sleep [CDN] : due to GPP1 GPP3 GPP4 GPP5 GPP6 GPP7 GPP9 X162 GPPA GPPB GPPC GPPD GPPE GPPF GP10 GP11 PX11/ Using AC (Charge:0%) 49 secs   
+2021-02-05 15:52:20 +0800 Sleep               	Entering Sleep state due to 'Maintenance Sleep': Using AC (Charge:0%) 16 secs   
+2021-02-05 15:52:36 +0800 DarkWake            	DarkWake from Normal Sleep [CDN] : due to GPP1 GPP3 GPP4 GPP5 GPP6 GPP7 GPP9 X162 GPPA GPPB GPPC GPPD GPPE GPPF GP10 GP11 PX11/ Using AC (Charge:0%) 46 secs   
+2021-02-05 15:53:22 +0800 Sleep               	Entering Sleep state due to 'Maintenance Sleep': Using AC (Charge:0%) 16 secs   
+2021-02-05 15:53:38 +0800 DarkWake            	DarkWake from Normal Sleep [CDN] : due to GPP1 GPP3 GPP4 GPP5 GPP6 GPP7 GPP9 X162 GPPA GPPB GPPC GPPD GPPE GPPF GP10 GP11 PX11/ Using AC (Charge:0%) 46 secs   
+2021-02-05 15:54:24 +0800 Sleep               	Entering Sleep state due to 'Maintenance Sleep': Using AC (Charge:0%) 16 secs   
+2021-02-05 15:54:40 +0800 DarkWake            	DarkWake from Normal Sleep [CDN] : due to GPP1 GPP3 GPP4 GPP5 GPP6 GPP7 GPP9 X162 GPPA GPPB GPPC GPPD GPPE GPPF GP10 GP11 PX11/ Using AC (Charge:0%) 46 secs   
+2021-02-05 15:55:26 +0800 Sleep               	Entering Sleep state due to 'Maintenance Sleep': Using AC (Charge:0%) 16 secs   
+2021-02-05 15:55:42 +0800 DarkWake            	DarkWake from Normal Sleep [CDN] : due to GPP1 GPP3 GPP4 GPP5 GPP6 GPP7 GPP9 X162 GPPA GPPB GPPC GPPD GPPE GPPF GP10 GP11 PX11/ Using AC (Charge:0%) 42 secs   
+2021-02-05 15:56:24 +0800 Sleep               	Entering Sleep state due to 'Maintenance Sleep': Using AC (Charge:0%) 16 secs   
+2021-02-05 15:56:40 +0800 DarkWake            	DarkWake from Normal Sleep [CDN] : due to GPP1 GPP3 GPP4 GPP5 GPP6 GPP7 GPP9 X162 GPPA GPPB GPPC GPPD GPPE GPPF GP10 GP11 PX11/ Using AC (Charge:0%) 46 secs   
+2021-02-05 15:57:26 +0800 Sleep               	Entering Sleep state due to 'Maintenance Sleep': Using AC (Charge:0%) 17 secs   
+2021-02-05 15:57:43 +0800 DarkWake            	DarkWake from Normal Sleep [CDN] : due to GPP1 GPP3 GPP4 GPP5 GPP6 GPP7 GPP9 X162 GPPA GPPB GPPC GPPD GPPE GPPF GP10 GP11 PX11/ Using AC (Charge:0%) 49 secs   
+2021-02-05 15:58:32 +0800 Sleep               	Entering Sleep state due to 'Maintenance Sleep': Using AC (Charge:0%) 16 secs   
+2021-02-05 15:58:48 +0800 DarkWake            	DarkWake from Normal Sleep [CDN] : due to GPP1 GPP3 GPP4 GPP5 GPP6 GPP7 GPP9 X162 GPPA GPPB GPPC GPPD GPPE GPPF GP10 GP11 PX11/ Using AC (Charge:0%) 45 secs   
+2021-02-05 15:59:33 +0800 Sleep               	Entering Sleep state due to 'Maintenance Sleep': Using AC (Charge:0%) 17 secs   
+2021-02-05 15:59:50 +0800 DarkWake            	DarkWake from Normal Sleep [CDN] : due to GPP1 GPP3 GPP4 GPP5 GPP6 GPP7 GPP9 X162 GPPA GPPB GPPC GPPD GPPE GPPF GP10 GP11 PX11/ Using AC (Charge:0%) 44 secs   
+2021-02-05 16:00:34 +0800 Sleep               	Entering Sleep state due to 'Maintenance Sleep': Using AC (Charge:0%) 17 secs   
+2021-02-05 16:00:51 +0800 DarkWake            	DarkWake from Normal Sleep [CDN] : due to GPP1 GPP3 GPP4 GPP5 GPP6 GPP7 GPP9 X162 GPPA GPPB GPPC GPPD GPPE GPPF GP10 GP11 PX11/ Using AC (Charge:0%) 47 secs   
+2021-02-05 16:01:38 +0800 Sleep               	Entering Sleep state due to 'Maintenance Sleep': Using AC (Charge:0%) 17 secs   
+2021-02-05 16:01:55 +0800 DarkWake            	DarkWake from Normal Sleep [CDN] : due to GPP1 GPP3 GPP4 GPP5 GPP6 GPP7 GPP9 X162 GPPA GPPB GPPC GPPD GPPE GPPF GP10 GP11 PX11/ Using AC (Charge:0%) 3 secs    
+2021-02-05 16:01:58 +0800 Wake                	DarkWake to FullWake from Normal Sleep [CDNVA] : due to HID Activity Using AC (Charge:0%) 861 secs  
+2021-02-05 16:16:19 +0800 Sleep               	Entering Sleep state due to 'Idle Sleep': Using AC (Charge:0%) 19 secs   
+2021-02-05 16:16:38 +0800 DarkWake            	DarkWake from Normal Sleep [CDN] : due to GPP1 GPP3 GPP4 GPP5 GPP6 GPP7 GPP9 X162 GPPA GPPB GPPC GPPD GPPE GPPF GP10 GP11 PX11/ Using AC (Charge:0%) 47 secs   
+2021-02-05 16:17:25 +0800 Sleep               	Entering Sleep state due to 'Maintenance Sleep': Using AC (Charge:0%) 16 secs   
+2021-02-05 16:17:41 +0800 DarkWake            	DarkWake from Normal Sleep [CDN] : due to GPP1 GPP3 GPP4 GPP5 GPP6 GPP7 GPP9 X162 GPPA GPPB GPPC GPPD GPPE GPPF GP10 GP11 PX11/ Using AC (Charge:0%) 45 secs   
+2021-02-05 16:18:26 +0800 Sleep               	Entering Sleep state due to 'Maintenance Sleep': Using AC (Charge:0%) 16 secs   
+2021-02-05 16:18:42 +0800 DarkWake            	DarkWake from Normal Sleep [CDN] : due to GPP1 GPP3 GPP4 GPP5 GPP6 GPP7 GPP9 X162 GPPA GPPB GPPC GPPD GPPE GPPF GP10 GP11 PX11/ Using AC (Charge:0%) 46 secs   
+2021-02-05 16:19:28 +0800 Sleep               	Entering Sleep state due to 'Maintenance Sleep': Using AC (Charge:0%) 16 secs   
+2021-02-05 16:19:44 +0800 DarkWake            	DarkWake from Normal Sleep [CDN] : due to GPP1 GPP3 GPP4 GPP5 GPP6 GPP7 GPP9 X162 GPPA GPPB GPPC GPPD GPPE GPPF GP10 GP11 PX11/ Using AC (Charge:0%) 12 secs   
+2021-02-05 16:19:56 +0800 Wake                	DarkWake to FullWake from Normal Sleep [CDNVA] : due to HID Activity Using AC (Charge:0%) 653 secs  
+2021-02-05 16:30:49 +0800 Sleep               	Entering Sleep state due to 'Idle Sleep': Using AC (Charge:0%) 18 secs   
+2021-02-05 16:31:07 +0800 DarkWake            	DarkWake from Normal Sleep [CDN] : due to GPP1 GPP3 GPP4 GPP5 GPP6 GPP7 GPP9 X162 GPPA GPPB GPPC GPPD GPPE GPPF GP10 GP11 PX11/ Using AC (Charge:0%) 45 secs   
+2021-02-05 16:31:52 +0800 Sleep               	Entering Sleep state due to 'Maintenance Sleep': Using AC (Charge:0%) 16 secs   
+2021-02-05 16:32:08 +0800 DarkWake            	DarkWake from Normal Sleep [CDN] : due to GPP1 GPP3 GPP4 GPP5 GPP6 GPP7 GPP9 X162 GPPA GPPB GPPC GPPD GPPE GPPF GP10 GP11 PX11/ Using AC (Charge:0%) 46 secs   
+2021-02-05 16:32:54 +0800 Sleep               	Entering Sleep state due to 'Maintenance Sleep': Using AC (Charge:0%) 15 secs   
+2021-02-05 16:33:09 +0800 DarkWake            	DarkWake from Normal Sleep [CDN] : due to GPP1 GPP3 GPP4 GPP5 GPP6 GPP7 GPP9 X162 GPPA GPPB GPPC GPPD GPPE GPPF GP10 GP11 PX11/ Using AC (Charge:0%) 46 secs   
+2021-02-05 16:33:55 +0800 Sleep               	Entering Sleep state due to 'Maintenance Sleep': Using AC (Charge:0%) 16 secs   
+2021-02-05 16:34:11 +0800 DarkWake            	DarkWake from Normal Sleep [CDN] : due to GPP1 GPP3 GPP4 GPP5 GPP6 GPP7 GPP9 X162 GPPA GPPB GPPC GPPD GPPE GPPF GP10 GP11 PX11/ Using AC (Charge:0%) 46 secs   
+2021-02-05 16:34:57 +0800 Sleep               	Entering Sleep state due to 'Maintenance Sleep': Using AC (Charge:0%) 17 secs   
+2021-02-05 16:35:14 +0800 Wake                	Wake from Normal Sleep [CDNVA] : due to GPP1 GPP3 GPP4 GPP5 GPP6 GPP7 GPP9 X162 GPPA GPPB GPPC GPPD GPPE GPPF GP10 GP11 PX11/HID Activity Using AC (Charge:0%)           
+tweetorui@tweetoruideiMac MacOS % 
