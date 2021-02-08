@@ -66,6 +66,7 @@ Issues
 | 无法调整显示器的输出声音 | [MonitorControl](https://github.com/MonitorControl/MonitorControl) | https://www.v2ex.com/t/671686
 | brew 安装报错 No available formula with the name  | 1. rm -rf /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core <br> 2.brew update| online 
 | 没有权限打开应用 | --- | ---
+| 自动关闭磁盘，降低噪音 | 如下命令，无法做到没有文件访问时自动关闭，有文件寻址到该磁盘时自动装载，而且时不时会被某些应用打开。或许可以使用某种权限，开机就把允许访问该磁盘的权限收回，这样开机就会排除掉应用访问该磁盘的可能性 | https://superuser.com/questions/251969/disable-or-sleep-secondary-hard-drive-in-macbook
 | --- | --- | ---
 
 <br>
@@ -85,10 +86,26 @@ Command
     diskutil list 
     sudo diskutil mount disk3s1
 
+> 卸载磁盘中的单个分区
+
+    diskutil unmount disk2s1
+
+> 卸载整个磁盘(然而磁盘还是会时不时启动),force:optional
+
+    diskutil unmountDisk force /dev/disk2
+
 > [显示器音量控制 homebrew](https://github.com/Homebrew/homebrew-cask)
     
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     brew install --cask monitorcontrol
+
+> 1分钟后关闭磁盘，节能-允许关闭磁盘
+
+    sudo pmset -a disksleep 1
+
+> 查看什么进程占用了磁盘
+
+    sudo lsof|grep disk4
 
 <br>
 
@@ -99,16 +116,26 @@ Operation
 - command + shift + 4 区域截图
 - command + shift + 4 + space 窗口截图
 - command + t 在文件夹中打开新的标签页,比windows的好看
+- opention + command + esc 强制结束
 
 <br>
 
 Issues
 ---
 1. **节能不能设置睡眠时间**
-2. **睡眠后会立即启动，唤醒后蓝牙无法使用，应该是USB 映射的问题**
-3. 等待 ax210 驱动的支持 [itlwm](http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1848662)
+1. **睡眠秒醒，重建USB映射蓝牙无法使用~~wake reason:GPP1 GPP3 GPP4 GPP5 GPP6 GPP7 GPP9 X162 GPPA GPPB GPPC GPPD GPPE GPPF GP10 GP11 PX11,通过windows导出的dsdt可以找到这几个对应的pci0端口，但是在ioregister'里无法找到这几个pci0，据我分析，和USB映射无关，应该和禁用dgpu类似，但是通过官方的方法禁用dgpu无法启动，也就导致无法禁用上述几个pci0端口。通过搜索，发现一个问题，官方的sample.aml文件有两种版本，一种是Scope()类型的，一种是Method()类型的，对比windows导出的dsdt，里面定义的方法都是scopr类型的，不清楚怎么搞**
+1. 修改DSDT文件并添加入ACPI 无法启动，卡在tx_flusher:1074 ，无法解决
+1. 等待 ax210 驱动的支持 [itlwm](http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1848662)
 
 <br>
+
+Kext
+---
+- SMCAMDProcessor.kext [amd电源管理](https://github.com/trulyspinach/SMCAMDProcessor)的依赖，缺少无法监控cpu 核心频率 和温度 
+- NVMEFix.kext 必须，因为windows主系统安装在了981a固态上了，没有采取禁用的方式
+- AMDRyzenCPUPowerManagement.kext 监控CPU 温度等参数的必须
+- USBMap.kext 根据[USBMap](https://github.com/corpnewt/USBMap)生成的，需要一个一个接口的测试，测试时的别名会缓存，不用担心退出命令会丢失。这是我自己电脑主板的USB映射，只激活了9个usb2/3 接口，请不要随意使用。
+- SSDT-PLUG 原生电源管理？真的有用吗
 
 ### 后记
 +  **当前开启了debug 模式，删除-v即可关闭**
@@ -123,3 +150,7 @@ Issues
 ![photo](https://github.com/SandiTT/Hackintosh-3700X-5700-B450M-Catalina-10.15.7/blob/OC-0.6.7/photo/catalina.png)
 
 ![photo](https://github.com/SandiTT/Hackintosh-3700X-5700-B450M-Catalina-10.15.7/blob/OC-0.6.7/photo/big%20sur.png)
+
+
+
+
