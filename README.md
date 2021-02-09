@@ -89,11 +89,16 @@ Command
 
     diskutil list 
     sudo diskutil mount disk3s1
+> 取消挂载磁盘分区
+
+    sudo diskutil unmountDisk force /dev/disk2
+
 
 > [显示器音量控制 homebrew](https://github.com/Homebrew/homebrew-cask)
     
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     brew install --cask monitorcontrol
+
 
 <br>
 
