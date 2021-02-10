@@ -1,7 +1,6 @@
-# 从[原网址](https://github.com/jinhaozcp/Hackintosh-Ryzen-MSI-B450-Gaming-Pro-carbon-ac) 修改而来
-
-## Hackintosh-AMD-Catalina10.15.7
+# Hackintosh-3700X-RX5700-B450M-Catalina 10.15.7/Big Sur 11.2
 ### ASUS-TUF-B450M-PLUS-GAMING
+
 - Macos: 10.15.7 (19H15)/11.2
 - OC: 0.6.7 (shown from Hackintool)
 - CPU: AMD Ryzen 7 3700X 8-Core 八核
@@ -55,6 +54,7 @@ Setup Toolkit
 - Alfred 搜索 
 - iRightMouse 超级右键
 - Rectangle 分屏软件
+- Jettison 1.8.1 外部磁盘智能弹出
 
 <br>
 
@@ -98,6 +98,9 @@ Command
     
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     brew install --cask monitorcontrol
+> 设置硬盘自动睡眠时间为1min(不建议设置太短，会频繁启停-每四分钟左右会自动唤醒，影响寿命)
+
+    sudo pmset -a disksleep 1
 
 
 <br>
